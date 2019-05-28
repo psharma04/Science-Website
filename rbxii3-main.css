@@ -1,0 +1,244 @@
+/* CSS for styling everything */
+* { margin:0; padding:0}
+body, html {
+	height:100%;
+	margin:0;
+	background-color:#CCC; /*Note: #CCC is same as RGB 204,204,204 or #CCCCCC */
+}
+li{
+	margin: 5px;
+}
+/* The amazing custom-colored scrollbar by Pranav Sharma */
+::-webkit-scrollbar {width: 0.6%; height: 1%; background: #DDD; } /*change these to change the width of the scrollbar and the color of the area behind it */
+::-webkit-scrollbar-thumb { background-color: #333; -webkit-border-radius: 1ex; } /* change these to change the color of the scrollbar and the roundness of the bevels (rounded corners) */
+/* Custom Fonts (Algerian and Chiller) */
+@font-face {
+    font-family: Chiller;
+	src: local("Chiller");
+    src: url(https://github.com/psharma04/IST2018/raw/master/fonts/CHILLER.TTF);
+	src: url(https://rbxii3.com/fonts/CHILLER.TTF);
+}
+@font-face {
+    font-family: Algerian;
+	src: local("Algerian");
+    src: url(https://github.com/psharma04/IST2018/raw/master/fonts/ALGER.TTF);
+	src: url(https://rbxii3.com/fonts/ALGER.TTF);
+}
+@font-face {
+    font-family: "Adobe Caslon Pro";
+    src: url(https://github.com/psharma04/IST2018/raw/master/fonts/Caslon.ttf);
+	src: url(https://rbxii3.com/fonts/Caslon.ttf);
+}
+@font-face {
+	font-family: Trebuchet;
+	src: local("Trebuchet MS");
+	src: url(https://github.com/psharma04/IST2018/raw/master/fonts/superiorsiegeengine.ttf);
+	src: url(fonts/superiorsiegeengine.ttf);
+	src: url(https://rbxii3.com/fonts/superiorsiegeengine.ttf);
+}
+@font-face {
+	font-family: Bookman;
+	src: local("Bookman Old Style");
+	src: url(fonts/bookman.TTF);
+	src: url(https://rbxii3.com/fonts/bookman.TTF);
+}
+/* DIV classes below */
+.body {
+	background-color:#CCCCCC;
+	padding: 20px;
+	margin: 1%;
+	font-size:105%;
+	font-family: "Adobe Caslon Pro";
+	clear: both;
+}
+.btn-yellow{
+	color:#212529;
+	background-color:#ffc107;
+	border-radius: 4px;
+	border-color:#ffc107;
+	padding:10px;
+	font-size:130%;
+	cursor: pointer;
+}
+.btn-yellow:hover{
+	color:#ff0000;
+	background-color:#000000;
+	border-radius: 12px;
+	border-color:#000000;
+	cursor: pointer;
+}
+.wrapper {
+	margin:0;
+	padding:0;
+    text-align: center;
+	height:100%;
+	width:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.wrapper1 {
+	margin:0;
+	padding:0;
+    text-align: center;
+
+	height:100%;
+	width:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #AAA;
+    text-align: center;
+	padding:0;
+	margin:0;
+}
+.topnav {
+	position: relative;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#333333;
+	padding:0%;
+	margin:0%;
+	z-index:100;
+	font-family: "Trebuchet";
+}
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.topnav li a:hover {
+    background-color: #111111;
+}
+.grey {
+	background-color: f2f2f2;
+}
+.footer-light-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+	padding:0;
+	margin:0;
+}
+.footer-light-right {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+	padding:0;
+	margin:0;
+}
+.vanilla {
+	background-color:#00000000;
+}
+.vanilla a.plain{
+	color: #00ffff;
+}
+.vanilla a.plain:visited  {
+	color: #bf6ee0;
+}
+.list {
+	font-family: "Georgia", "Sans Serif", "Arial";
+	font-size: 0.9em;
+	margin: 1%;
+}
+.sources {
+	text-align:center;
+}
+.btn-sources {
+	color:#212529;
+	background-color:#ffc107;
+	border-radius: 1px;
+	border-color:#ffc107;
+	padding:0.2%;
+	font-size:90%
+}
+.btn-sources:hover{
+	color:#ff0000;
+	background-color:#000000;
+	border-radius: 12%;
+	border-color:#000000
+}
+#toTop {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 48px;
+}
+
+#toTop {
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  opacity: 0.5;
+  display: none;
+  cursor: pointer;
+}
+
+#toTop:hover {
+  opacity: 1;
+}
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+a {text-decoration: underline; color:#000000}
+a:visited {text-decoration:underline; color:#000000}
