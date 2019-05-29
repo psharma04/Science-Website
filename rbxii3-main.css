@@ -17,14 +17,14 @@ li{
 	src: local("Chiller");
     src: url(https://github.com/psharma04/IST2018/raw/master/fonts/CHILLER.TTF);
 	src: url(https://rbxii3.com/fonts/CHILLER.TTF);
-	src: url(fonts/CHILLER.TTF);
+	src: url(fonts/CHILLER.ttf);
 }
 @font-face {
     font-family: Algerian;
 	src: local("Algerian");
     src: url(https://github.com/psharma04/IST2018/raw/master/fonts/ALGER.TTF);
 	src: url(https://rbxii3.com/fonts/ALGER.TTF);
-	src: url(fonts/ALGER.TTF);
+	src: url(fonts/ALGER.ttf);
 }
 @font-face {
     font-family: "Adobe Caslon Pro";
@@ -45,7 +45,7 @@ li{
 	src: local("Bookman Old Style");
 	src: url(fonts/bookman.TTF);
 	src: url(https://rbxii3.com/fonts/bookman.TTF);
-	src: url(fonts/bookman.TTF);
+	src: url(fonts/bookman.ttf);
 }
 /* DIV classes below */
 .body {
